@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'vendors/reset';
+
+@import 'abstracts/animations';
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/cursor';
+@import 'components/hero';
+@import 'components/nav';
+@import 'components/posts';
+@import 'components/svg';
