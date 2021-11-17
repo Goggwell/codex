@@ -79,11 +79,11 @@
     --body-padding: var(--spacing-12);
 
     // Extra Colors
-    --powder-blue: #A8DADC;
-    --celadon-blue: #457B9D;
-    --prussian-blue: #1D3557;
-    --imperial-red: #E63946;
-    --honeydew: #F1FAEE;
+    --powder-blue: #107190;
+    --celadon-blue: #035274;
+    --prussian-blue: #063156;
+    --imperial-red: #E63834;
+    --honeydew: #FCF9E7;
 
     @media screen and (max-width: 1104px) {
         --body-padding: var(--spacing-8);
@@ -96,21 +96,21 @@
 
 body,
 body[data-theme='light'] {
-    --bg-color: hsl(105, 55%, 96%);
-    --text-color: hsl(215, 50%, 23%);
-    --text-color-rgb: 29, 54, 88;
-    --text-color-secondary: hsl(203, 39%, 44%);
-    --bean-bag: hsl(215, 50%, 23%);
-    --blanket: hsl(355, 78%, 56%);
+    --bg-color: hsl(51, 78%, 95%);
+    --text-color: hsl(208, 87%, 18%);
+    --text-color-rgb: 6, 49, 86;
+    --text-color-secondary: hsl(198, 95%, 23%);
+    --bean-bag: hsl(208, 87%, 18%);
+    --blanket: hsl(1, 78%, 55%);
     --laptop: var(--celadon-blue);
 }
 
 body[data-theme='dark'] {
-    --bg-color: hsl(215, 50%, 23%);
-    --text-color: hsl(105, 55%, 96%);
-    --text-color-rgb: 242, 250, 239;
-    --text-color-secondary: hsl(182, 43%, 76%);
-    --bean-bag: hsl(203, 39%, 44%);
-    --blanket: hsl(203, 78%, 56%);
+    --bg-color: hsl(208, 87%, 18%);
+    --text-color: hsl(51, 78%, 95%);
+    --text-color-rgb: 252, 249, 231;
+    --text-color-secondary: hsl(195, 80%, 31%);
+    --bean-bag: hsl(198, 95%, 23%);
+    --blanket: hsl(1, 78%, 55%);
     --laptop: var(--honeydew);
 }

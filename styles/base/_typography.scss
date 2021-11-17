@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'Colfax';
+    src: url("/fonts/Colfax/Colfax-Regular.woff") format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 
 body {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: var(--font-normal);
-    font-feature-settings: "ss01" on,"ss02" on,"kern" on;
     font-size: var(--text-base);
     line-height: var(--leading-normal);
     color: var(--text-color-secondary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
 }
 
 h1,
