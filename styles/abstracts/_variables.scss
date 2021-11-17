@@ -1,116 +1,116 @@
 :root {
-    // Spacing
-    --spacing-0: 0;
-    --spacing-0-5: 0.125rem;
-    --spacing-1: 0.25rem;
-    --spacing-2: 0.5rem;
-    --spacing-3: 0.75rem;
-    --spacing-4: 1rem;
-    --spacing-5: 1.25rem;
-    --spacing-6: 1.5rem;
-    --spacing-7: 1.75rem;
-    --spacing-8: 2rem;
-    --spacing-9: 2.25rem;
-    --spacing-10: 2.5rem;
-    --spacing-11: 2.75rem;
-    --spacing-12: 3rem;
-    --spacing-14: 3.5rem;
-    --spacing-16: 4rem;
-    --spacing-20: 5rem;
-    --spacing-24: 6rem;
-    --spacing-28: 7rem;
-    --spacing-32: 8rem;
-    --spacing-36: 9rem;
-    --spacing-40: 10rem;
-    --spacing-44: 11rem;
-    --spacing-48: 12rem;
-    --spacing-52: 13rem;
-    --spacing-56: 14rem;
-    --spacing-60: 15rem;
-    --spacing-64: 16rem;
-    --spacing-72: 18rem;
-    --spacing-80: 20rem;
-    --spacing-88: 22rem;
-    --spacing-96: 24rem;
+  // Spacing
+  --spacing-0: 0;
+  --spacing-0-5: 0.125rem;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 1.75rem;
+  --spacing-8: 2rem;
+  --spacing-9: 2.25rem;
+  --spacing-10: 2.5rem;
+  --spacing-11: 2.75rem;
+  --spacing-12: 3rem;
+  --spacing-14: 3.5rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-28: 7rem;
+  --spacing-32: 8rem;
+  --spacing-36: 9rem;
+  --spacing-40: 10rem;
+  --spacing-44: 11rem;
+  --spacing-48: 12rem;
+  --spacing-52: 13rem;
+  --spacing-56: 14rem;
+  --spacing-60: 15rem;
+  --spacing-64: 16rem;
+  --spacing-72: 18rem;
+  --spacing-80: 20rem;
+  --spacing-88: 22rem;
+  --spacing-96: 24rem;
 
-    // Font Sizes
-    --text-xs: 0.75rem;
-    --text-sm: 0.875rem;
-    --text-base: 1rem;
-    --text-lg: 1.125rem;
-    --text-xl: 1.25rem;
-    --text-2xl: 1.5rem;
-    --text-3xl: 1.875rem;
-    --text-4xl: 2.25rem;
-    --text-5xl: 3rem;
-    --text-6xl: 3.75rem;
-    --text-7xl: 4.5rem;
-    --text-8xl: 6rem;
-    
-    // Font Weights
-    --font-light: 300;
-    --font-normal: 400;
-    --font-bold: 700;
+  // Font Sizes
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
 
-    // Grays
-    --gray-900: hsl(250, 35%, 15%);
-    --gray-800: hsl(250, 28%, 19%);
-    --gray-700: hsl(250, 19%, 27%);
-    --gray-600: hsl(250, 14%, 34%);
-    --gray-500: hsl(250, 9%, 46%);
-    --gray-400: hsl(250, 11%, 65%);
-    --gray-300: hsl(250, 2%, 84%);
-    --gray-200: hsl(250, 13%, 91%);
-    --gray-100: hsl(250, 14%, 96%);
-    --gray-000: hsl(245, 33%, 98%);
+  // Font Weights
+  --font-light: 300;
+  --font-normal: 400;
+  --font-bold: 700;
 
-    // Tracking
-    --tracking-tight: -0.025em;
-    --tracking-tighter: -0.05em;
+  // Grays
+  --gray-900: hsl(250, 35%, 15%);
+  --gray-800: hsl(250, 28%, 19%);
+  --gray-700: hsl(250, 19%, 27%);
+  --gray-600: hsl(250, 14%, 34%);
+  --gray-500: hsl(250, 9%, 46%);
+  --gray-400: hsl(250, 11%, 65%);
+  --gray-300: hsl(250, 2%, 84%);
+  --gray-200: hsl(250, 13%, 91%);
+  --gray-100: hsl(250, 14%, 96%);
+  --gray-000: hsl(245, 33%, 98%);
 
-    // Leading
-    --leading-none: 1;
-    --leading-tight: 1.25;
-    --leading-snug: 1.375;
-    --leading-normal: 1.5;
-    --leading-relaxed: 1.625;
-    --leading-loose: 2;
-  
-    --body-padding: var(--spacing-12);
+  // Tracking
+  --tracking-tight: -0.025em;
+  --tracking-tighter: -0.05em;
 
-    // Extra Colors
-    --powder-blue: #A8DADC;
-    --celadon-blue: #457B9D;
-    --prussian-blue: #1D3557;
-    --imperial-red: #E63946;
-    --honeydew: #F1FAEE;
+  // Leading
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
 
-    @media screen and (max-width: 1104px) {
-        --body-padding: var(--spacing-8);
-    }
+  --body-padding: var(--spacing-12);
 
-    @media screen and (max-width: 600px) {
-        --body-padding: var(--spacing-4);
-    }
+  // Extra Colors
+  --powder-blue: #a8dadc;
+  --celadon-blue: #457b9d;
+  --prussian-blue: #1d3557;
+  --imperial-red: #e63946;
+  --honeydew: #f1faee;
+
+  @media screen and (max-width: 1104px) {
+    --body-padding: var(--spacing-8);
+  }
+
+  @media screen and (max-width: 600px) {
+    --body-padding: var(--spacing-4);
+  }
 }
 
 body,
-body[data-theme='light'] {
-    --bg-color: hsl(105, 55%, 96%);
-    --text-color: hsl(215, 50%, 23%);
-    --text-color-rgb: 29, 54, 88;
-    --text-color-secondary: hsl(203, 39%, 44%);
-    --bean-bag: hsl(215, 50%, 23%);
-    --blanket: hsl(355, 78%, 56%);
-    --laptop: var(--celadon-blue);
+body[data-theme="light"] {
+  --bg-color: hsl(105, 55%, 96%);
+  --text-color: hsl(215, 50%, 23%);
+  --text-color-rgb: 29, 54, 88;
+  --text-color-secondary: hsl(203, 39%, 44%);
+  --bean-bag: hsl(215, 50%, 23%);
+  --blanket: hsl(355, 78%, 56%);
+  --laptop: var(--celadon-blue);
 }
 
-body[data-theme='dark'] {
-    --bg-color: hsl(215, 50%, 23%);
-    --text-color: hsl(105, 55%, 96%);
-    --text-color-rgb: 242, 250, 239;
-    --text-color-secondary: hsl(182, 43%, 76%);
-    --bean-bag: hsl(203, 39%, 44%);
-    --blanket: hsl(203, 78%, 56%);
-    --laptop: var(--honeydew);
+body[data-theme="dark"] {
+  --bg-color: hsl(215, 50%, 23%);
+  --text-color: hsl(105, 55%, 96%);
+  --text-color-rgb: 242, 250, 239;
+  --text-color-secondary: hsl(182, 43%, 76%);
+  --bean-bag: hsl(203, 39%, 44%);
+  --blanket: hsl(203, 78%, 56%);
+  --laptop: var(--honeydew);
 }
