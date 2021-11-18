@@ -13,7 +13,7 @@ export default function Home({ posts }) {
             <h1 className="hero__hey">Howdy, I'm Samuel!</h1>
             <h2 className="hero__about--title">
               I'm a{' '}
-              <Typical 
+              <Typical
                 steps={[
                   'full stack developer',
                   650,
@@ -31,7 +31,6 @@ export default function Home({ posts }) {
                 wrapper="span"
                 loop={Infinity}
               />
-              <br/>
               — with a passion for learning
             </h2>
             <p className="hero__about">
@@ -47,17 +46,17 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div className="home wrapper">
-            <div className="recently-published">
-                <h2 className="section-heading">Recently Published</h2>
-                <div className="recently-published__posts">
-                    {posts.map((post) => (
-                        <PostCard post={post.node} key={post.title} />
-                    ))}
-                </div>
+          <div className="recently-published">
+            <h2 className="section-heading">Recently Published</h2>
+            <div className="recently-published__posts">
+              {posts.map((post) => (
+                <PostCard post={post.node} key={post.title} />
+              ))}
             </div>
-            <div className="explore-tags">
+          </div>
+          <div className="explore-tags">
 
-            </div>
+          </div>
         </div>
       </main>
     </>

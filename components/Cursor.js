@@ -26,7 +26,7 @@ const Cursor = () => {
             mainCursor.current.style.transform = `translate3d(${mouseX - mainCursor.current.clientWidth / 2}px, ${mouseY - mainCursor.current.clientHeight / 2}px, 0)`;
         });
 
-        return () => {};
+        return () => { };
     }, []);
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const Cursor = () => {
                 distanceX,
                 distanceY,
             } = positionRef.current;
-            if(!destinationX || !destinationY) {
+            if (!destinationX || !destinationY) {
                 positionRef.current.destinationX = mouseX;
                 positionRef.current.destinationY = mouseY;
             } else {
@@ -67,21 +67,38 @@ const Cursor = () => {
         };
         followMouse();
     }, []);
-    
+
     useEffect(() => {
-        const eventElements = [ 'a', 'button', 'canvas', 'img', 'input', 'textarea', 'span' ]
+        const eventElements = ['a', 'button', 'canvas', 'img', 'input', 'textarea', 'span']
+        const eventClasses = ['recently-published__post', 'recently-published__post-title', 'recently-published__post-excerpt', 'recently-published__post-date', 'recently-published__post-arrow']
         const addListeners = () => {
             document.addEventListener('mouseover', e => {
-                for(const el of eventElements) {
-                    if(e.target.tagName.toLowerCase() === el) {
+                for (const el of eventElements) {
+                    if (e.target.tagName.toLowerCase() === el) {
                         setHover(true);
                     }
                 }
             }, false);
 
             document.addEventListener('mouseout', e => {
-                for(const el of eventElements) {
-                    if(e.target.tagName.toLowerCase() === el) {
+                for (const el of eventElements) {
+                    if (e.target.tagName.toLowerCase() === el) {
+                        setHover(false);
+                    }
+                }
+            }, false);
+
+            document.addEventListener('mouseover', e => {
+                for (const el of eventClasses) {
+                    if (e.target.matches('.' + el)) {
+                        setHover(true);
+                    }
+                }
+            }, false);
+
+            document.addEventListener('mouseout', e => {
+                for (const el of eventClasses) {
+                    if (e.target.matches('.' + el)) {
                         setHover(false);
                     }
                 }
@@ -90,16 +107,32 @@ const Cursor = () => {
 
         const removeListeners = () => {
             document.removeEventListener('mouseover', e => {
-                for(const el of eventElements) {
-                    if(e.target.tagName.toLowerCase() === el) {
+                for (const el of eventElements) {
+                    if (e.target.tagName.toLowerCase() === el) {
                         setHover(true);
                     }
                 }
             }, false);
 
-            document.addEventListener('mouseout', e => {
-                for(const el of eventElements) {
-                    if(e.target.tagName.toLowerCase() === el) {
+            document.removeEventListener('mouseout', e => {
+                for (const el of eventElements) {
+                    if (e.target.tagName.toLowerCase() === el) {
+                        setHover(false);
+                    }
+                }
+            }, false);
+
+            document.removeEventListener('mouseover', e => {
+                for (const el of eventClasses) {
+                    if (e.target.matches('.' + el)) {
+                        setHover(true);
+                    }
+                }
+            }, false);
+
+            document.removeEventListener('mouseout', e => {
+                for (const el of eventClasses) {
+                    if (e.target.matches('.' + el)) {
                         setHover(false);
                     }
                 }
